@@ -49,9 +49,10 @@ Create an application using spa vuejs app using laravel on the backend for the
 5. I will document the API requirements prior to beginning development so that I
     have a clear understand of what is required and how to integrate it into the
     app.
+6. I won't worry about responsive behavior in browsers due to time constraints. This will be developed to run on desktop-sized screens.
 
 ## Planning
-### API Service
+### BreakingBad API Service
 The external BreakingBad API will be wrapped in a single service class and
     contain the following methods. Struck methods are not necessary for this
     challenge, and will not be implemented in the interest of time, but are
@@ -96,6 +97,10 @@ Endpoint: `/deaths`
 - `getDeathCountCausedByCharacter(string)`: get total number of deaths a
     specified character was responsible for.
 - ~~`getRandomDeath()`: get a random death.~~
+
+### Internal API
+#### Characters
+Endpoint: `/api/characters/{id}`
 
 ### Models
 The following models will interface with the API Service class. They will
@@ -161,3 +166,8 @@ The following models will interface with the API Service class. They will
         - episode
     - number of deaths caused
     - a random quote
+
+### Vue Components
+- Character List With Filters
+- Character Details
+- Death Information
