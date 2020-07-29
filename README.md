@@ -1,79 +1,192 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Artist Republik's Code Challenge
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## First Code Challenge
+Create an application using spa vuejs app using laravel on the backend for the
+    API. The application should list all characters for Breaking Bad and Better
+    Call Saul.
 
-## About Laravel
+### Back-End Requirements
+- Create an API service to fetch all relevant information through the API. You
+    should fetch information from https://breakingbadapi.com/documentation​.
+- Create models and controllers to store and display the relative information.
+- Use resources to return data from the API
+- Allow for POST and PUT requests to add/update custom characters and attributes
+    such as name, occupation, nickname,dead or alive, and quotes.
+- The API should have a Laravel command that will fetch all the information from
+    the API and save it to the database for initial data.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Front-End Requirements
+- User should be able to filter characters by:
+    - Breaking Bad or Better call Saul series (only one selected at a time,
+        default to Breaking Bad).
+    - Season
+- Ability to search by character name (as each character is typed)
+- Clicking a character should bring us to a new page for that specific character
+    with the information listed below:
+    - Image
+    - Name
+    - Occupation
+    - Nickname (if applicable)
+    - Dead or alive
+        - If dead, display the cause of death, who is responsible for the death,
+            last words, season and episode - Death caused count (if available)
+    - A quote (if available)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Technical
+- Use components as needed
+- Bootstrap/Vueify/Custom
+- UI looks decent
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Second Code Challenge
+Create an application for managing characters of a TV show using Laravel as your
+    API and Vuejs as your frontend.
+I should be able to:
+- See a page of characters (with filters if applicable)
+- See a specific characters page
+- Create a new TV show for characters
+- Have characters with specific traits:
+    - Name
+    - Occupation - Bio
+- Filter characters by:
+    - TV show
+    - Name
+    - Occupation
+- Ability to search characters by name
 
-## Learning Laravel
+### Frontend Technical Requirements:
+- Vue and vuex
+- Use components
+- Boostrap/Vueify/Custom CSS (your pick)
+- UI looks decent
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Backend Technical Requirements:
+- Laravel as an API
+- Use migrations, models, controllers, resources, and requests (for validation)
+- RESTful API
+- Eloquent relationships
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Premise
+1. As we are given only one hour, I will focus on the first code challenge.
+2. I have prepped an fresh Laravel app with Vue, Bootstrap, and Vuetify, and
+    will start the clock after that point when I begin coding the actual app.
+3. I will familiarize myself a bit with the external API, as well as Vuetify
+    prior to starting development.
+4. I will mock up the various screens prior to beginning development to have
+    worked out the logical quirks and identify clear goals to work toward in an
+    efficient manner.
+5. I will document the API requirements prior to beginning development so that I
+    have a clear understand of what is required and how to integrate it into the
+    app.
 
-## Laravel Sponsors
+## Planning
+### API Service
+The external BreakingBad API will be wrapped in a single service class and
+    contain the following methods. Struck methods are not necessary for this
+    challenge, and will not be implemented in the interest of time, but are
+    recorded here for reference.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### Base URL
+https://www.breakingbadapi.com/api/
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+#### Characters
+Endpoint: `/characters`
 
-## Contributing
+- `getCharacters()`: gets all characters.
+- `getPaginatedCharacters(int limit, int page)`: gets all characters paginated.
+- `findCharacterById(int)`: finds a specific character by id.
+- `getCharactersByCategory(string)`: gets all characters of a specified
+    category.
+- `getRandomCharacter()`: gets a random character.
+- `getCharactersByName(string)`: gets all characters that have a match on part
+    of their name.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### Episodes
+Endpoint: `/episodes`
 
-## Code of Conduct
+- `getEpisodes()`: gets all episodes.
+- `getEpisodesBySeries(string)`: get all episodes of a specific series.
+- `findEpisode(int)`: get a specific episode by id.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### Quote
+Endpoint: `/quotes`
 
-## Security Vulnerabilities
+- `getQuotes()`: get all quotes.
+- `findQuote(int)`: get a specific quote by id.
+- `getQuotesBySeries(string)`: get all quotes of a specific series.
+- `getRandomQuote()`: get a random quote.
+- `getQuotesByAuthor(string)`: get all quotes by a specific author.
+- `getRandomQuoteByAuthor(string)`: get a random quote by a specific author.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#### Deaths
+Endpoint: `/deaths`
 
-## License
+- `getDeaths()`: get all deaths.
+- `getDeathCount()`: get total number of deaths.
+- `getDeathCountCausedByCharacter(string)`: get total number of deaths a
+    specified character was responsible for.
+- `getRandomDeath()`: get a random death.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Models
+The following models will interface with the API Service class. They will
+    contain the following properties, respectively:
+
+#### Character
+- id: int
+- name: string
+- birthday: string
+- occupation: array[string]
+- img: string
+- status: string
+- nickname: string
+- appearance: string
+- portrayed: string
+- category: array[string]
+
+#### Episode
+- id: int
+- title: string
+- season: int
+- episode: int
+- air_date: string
+- characters: array[string/int?]
+- series: string
+
+#### Quote
+- id: int
+- quote: string
+- author: string
+- series: string
+
+#### Death
+- id: int
+- death: string
+- cause: string
+- responsible: string
+- last_words: string
+- season: int
+- episode: int
+- number_of_deaths: int
+
+### Vue Views
+
+#### Index
+- List characters
+- filter by:
+    - series
+    - season
+- search by name and filter as user is typing
+
+#### Character Detail Page
+- show:
+    - image
+    - name
+    - occupation
+    - nickname
+    - status (dead or alive), if dead, show:
+        - cause of death
+        - who was responsible
+        - last words
+        - season
+        - episode
+    - number of deaths caused
+    - a random quote
