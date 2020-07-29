@@ -143,16 +143,20 @@ The following models will interface with the API Service class. They will
 - episode: int
 - number_of_deaths: int
 
-### Vue Views
+### Vue View
+There will be a single master-detail view with the following sections:
 
-#### Index
-- List characters
+#### Filters
 - filter by:
-    - series
-    - season
+    - series (defaults to "Breaking Bad")
+    - season (defaults to "Season 1")
 - search by name and filter as user is typing
 
-#### Character Detail Page
+#### list
+- list the characters according to the filter selections.
+- search values shows all characters according to series and season selections
+
+#### Details
 - show:
     - image
     - name
@@ -170,4 +174,3 @@ The following models will interface with the API Service class. They will
 ### Vue Components
 - Character List With Filters
 - Character Details
-- Death Information
