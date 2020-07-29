@@ -154,7 +154,7 @@ There will be a single master-detail view with the following sections:
     - season (defaults to "Season 1")
 - search by name and filter as user is typing
 
-#### list
+#### List
 - list the characters according to the filter selections.
 - search values shows all characters according to series and season selections
 
@@ -175,4 +175,6 @@ There will be a single master-detail view with the following sections:
 
 ### Vue Components
 - Character List
+    - click on data row emits event to parent with the selected character id.
 - Character Details
+    - shows "Please select a chacter" until a character is clicked in the list.

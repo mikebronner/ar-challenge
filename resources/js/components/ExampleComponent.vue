@@ -1,11 +1,5 @@
 <template>
-    <v-app>
-        <v-text-field
-            label="Outlined"
-            placeholder="Placeholder"
-            outlined
-        ></v-text-field>
-    </v-app>
+    <div>test</div>
 </template>
 
 <script>

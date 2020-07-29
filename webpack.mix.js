@@ -1,14 +1,4 @@
 const mix = require('laravel-mix');
-const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
-
-mix.extend(
-    "vuetify",
-    new (class {
-        webpackConfig(config) {
-            config.plugins.push(new VuetifyLoaderPlugin());
-        }
-    })()
-);
 
 /*
  |--------------------------------------------------------------------------
@@ -21,7 +11,16 @@ mix.extend(
  |
  */
 
-mix
-    .js("resources/js/app.js", "public/js")
-    .sass("resources/sass/app.scss", "public/css")
+mix.js("resources/js/app.js", "public/js")
+    .postCss("resources/css/app.css", "public/css")
+    .options({
+        postCss: [
+            require("postcss-css-variables"),
+            require("postcss-import"),
+            require("postcss-nested"),
+            require("tailwindcss"),
+            require("autoprefixer")
+        ],
+        purifyCss: true
+    })
 ;
