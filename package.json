@@ -10,7 +10,6 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@tailwindcss/ui": "^0.4.0",
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
         "browser-sync-webpack-plugin": "^2.0.1",
@@ -22,15 +21,9 @@
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
-        "postcss-css-variables": "^0.17.0",
-        "postcss-import": "^12.0",
-        "postcss-nested": "^4.2",
-        "purify-css": "^1.2",
-        "purifycss-webpack": "^0.7.0",
         "resolve-url-loader": "^2.3.1",
         "sass-loader": "^8.0.2",
         "sass": "^1.26.10",
-        "tailwindcss": "^1.6.0",
         "vue-template-compiler": "^2.6.10",
         "vue": "^2.5.17",
         "vuetify-loader": "^1.5.0",

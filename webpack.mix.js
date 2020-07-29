@@ -21,17 +21,7 @@ mix.extend(
  |
  */
 
-mix.js("resources/js/app.js", "public/js")
+mix
+    .js("resources/js/app.js", "public/js")
     .sass("resources/sass/app.scss", "public/css")
-    .options({
-        postCss: [
-            require("postcss-css-variables"),
-            require("postcss-import"),
-            require("postcss-nested"),
-            require("tailwindcss"),
-            require("autoprefixer"),
-        ],
-        purifyCss: true,
-    })
-    .browserSync("https://ar-challenge.dev.genealabs.com")
 ;
