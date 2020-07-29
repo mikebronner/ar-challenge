@@ -144,6 +144,8 @@ The following models will interface with the API Service class. They will
 - number_of_deaths: int
 
 ### Vue View
+![Mockup](https://user-images.githubusercontent.com/1791050/88850583-74a27d80-d1a0-11ea-93cb-6b9966f147dc.png)
+
 There will be a single master-detail view with the following sections:
 
 #### Filters
