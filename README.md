@@ -37,34 +37,6 @@ Create an application using spa vuejs app using laravel on the backend for the
 - Bootstrap/Vueify/Custom
 - UI looks decent
 
-## Second Code Challenge
-Create an application for managing characters of a TV show using Laravel as your
-    API and Vuejs as your frontend.
-I should be able to:
-- See a page of characters (with filters if applicable)
-- See a specific characters page
-- Create a new TV show for characters
-- Have characters with specific traits:
-    - Name
-    - Occupation - Bio
-- Filter characters by:
-    - TV show
-    - Name
-    - Occupation
-- Ability to search characters by name
-
-### Frontend Technical Requirements:
-- Vue and vuex
-- Use components
-- Boostrap/Vueify/Custom CSS (your pick)
-- UI looks decent
-
-### Backend Technical Requirements:
-- Laravel as an API
-- Use migrations, models, controllers, resources, and requests (for validation)
-- RESTful API
-- Eloquent relationships
-
 ## Premise
 1. As we are given only one hour, I will focus on the first code challenge.
 2. I have prepped an fresh Laravel app with Vue, Bootstrap, and Vuetify, and
@@ -85,8 +57,7 @@ The external BreakingBad API will be wrapped in a single service class and
     challenge, and will not be implemented in the interest of time, but are
     recorded here for reference.
 
-#### Base URL
-https://www.breakingbadapi.com/api/
+Base URL: `https://www.breakingbadapi.com/api/`
 
 #### Characters
 Endpoint: `/characters`
