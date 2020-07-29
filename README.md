@@ -174,5 +174,5 @@ There will be a single master-detail view with the following sections:
     - a random quote
 
 ### Vue Components
-- Character List With Filters
+- Character List
 - Character Details
