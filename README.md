@@ -63,39 +63,39 @@ Base URL: `https://www.breakingbadapi.com/api/`
 Endpoint: `/characters`
 
 - `getCharacters()`: gets all characters.
-- `getPaginatedCharacters(int limit, int page)`: gets all characters paginated.
+- ~~`getPaginatedCharacters(int limit, int page)`: gets all characters paginated.~~
 - `findCharacterById(int)`: finds a specific character by id.
-- `getCharactersByCategory(string)`: gets all characters of a specified
-    category.
-- `getRandomCharacter()`: gets a random character.
+- ~~`getCharactersByCategory(string)`: gets all characters of a specified
+    category.~~
+- ~~`getRandomCharacter()`: gets a random character.~~
 - `getCharactersByName(string)`: gets all characters that have a match on part
     of their name.
 
 #### Episodes
 Endpoint: `/episodes`
 
-- `getEpisodes()`: gets all episodes.
-- `getEpisodesBySeries(string)`: get all episodes of a specific series.
-- `findEpisode(int)`: get a specific episode by id.
+- ~~`getEpisodes()`: gets all episodes.~~
+- ~~`getEpisodesBySeries(string)`: get all episodes of a specific series.~~
+- ~~`findEpisode(int)`: get a specific episode by id.~~
 
 #### Quote
 Endpoint: `/quotes`
 
-- `getQuotes()`: get all quotes.
-- `findQuote(int)`: get a specific quote by id.
-- `getQuotesBySeries(string)`: get all quotes of a specific series.
-- `getRandomQuote()`: get a random quote.
-- `getQuotesByAuthor(string)`: get all quotes by a specific author.
+- ~~`getQuotes()`: get all quotes.~~
+- ~~`findQuote(int)`: get a specific quote by id.~~
+- ~~`getQuotesBySeries(string)`: get all quotes of a specific series.~~
+- ~~`getRandomQuote()`: get a random quote.~~
+- ~~`getQuotesByAuthor(string)`: get all quotes by a specific author.~~
 - `getRandomQuoteByAuthor(string)`: get a random quote by a specific author.
 
 #### Deaths
 Endpoint: `/deaths`
 
 - `getDeaths()`: get all deaths.
-- `getDeathCount()`: get total number of deaths.
+- ~~`getDeathCount()`: get total number of deaths.~~
 - `getDeathCountCausedByCharacter(string)`: get total number of deaths a
     specified character was responsible for.
-- `getRandomDeath()`: get a random death.
+- ~~`getRandomDeath()`: get a random death.~~
 
 ### Models
 The following models will interface with the API Service class. They will
