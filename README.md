@@ -178,3 +178,6 @@ There will be a single master-detail view with the following sections:
     - click on data row emits event to parent with the selected character id.
 - Character Details
     - shows "Please select a chacter" until a character is clicked in the list.
+
+## Execution
+[Watch the screencast](https://vimeo.com/443028728)
