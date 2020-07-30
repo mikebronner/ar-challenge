@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+
+Route::resource("characters", CharacterController::class);
+Route::resource("deaths", DeathController::class);
+Route::resource("quotes", QuoteController::class);

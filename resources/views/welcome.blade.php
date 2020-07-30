@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        <example-component></example-component>
+        <breaking-bad-database></breaking-bad-database>
     </div>
 @endsection
