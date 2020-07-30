@@ -180,4 +180,4 @@ There will be a single master-detail view with the following sections:
     - shows "Please select a chacter" until a character is clicked in the list.
 
 ## Execution
-[Watch the screencast](https://vimeo.com/video/443028728)
+[Watch the screencast](https://vimeo.com/443028728)
